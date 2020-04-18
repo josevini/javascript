@@ -1,14 +1,14 @@
 var autor = {
     nome: 'Vinicius Silva',
     totLivros: 2,
-    escrever() {
-        console.log(`${this.nome} escreveu mais um livro`)
+    escrever(livro) {
+        console.log(`${this.nome} escreveu o livro "${livro}"`)
         this.totLivros += 1
     }
 }
 
 autor.idade = 17
 console.log(`${autor.nome} tem ${autor.idade} anos e já escreveu ${autor.totLivros} livros!`)
-autor.escrever()
-autor.escrever()
-console.log(`O autor, ${autor.nome}, já escreveu ${autor.totLivros} livros`)
+autor.escrever("JavaScript básico")
+autor.escrever("JavaScript com POO")
+console.log(`O autor, ${autor.nome}, já escreveu, no total, ${autor.totLivros} livros`)
