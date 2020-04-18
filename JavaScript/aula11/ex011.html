@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex011</title>
+    <style>
+        body{
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>De qual país você é?</h1>
+    País: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" id="ver">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        var ver = window.document.getElementById('ver')
+        ver.addEventListener('click', verificar)
+
+        function verificar() {
+            var txtpais = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            var pais = txtpais.value
+            res.innerHTML = `<p>Vivendo em ${pais}</p>`
+            if (pais.toLowerCase() == 'brasil'){
+                res.innerHTML += `Você é brasileiro!`
+            }else{
+                res.innerHTML += `Você é estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>

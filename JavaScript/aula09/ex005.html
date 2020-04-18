@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Primeiros passos com o DOM</title>
+        <style>
+            body{
+                background-color: rgb(78, 78, 255);
+                font: normal 20px arial;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Iniciando estudos com DOM</h1>
+        <p id="t">Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+        <div id="msg">Clique em mim</div>
+        <script>
+            var corpo = window.document.body
+            corpo.style.background = 'black'
+            
+            // getElementsByTagName
+            // var p1 = document.getElementsByTagName('p')[1]
+            // window.document.write(p1.innerHTML)
+
+
+            // getElementById
+            // var msg = window.document.getElementById('msg')
+            // msg.style.color = 'green'
+            // msg.innerHTML = '<h1>Estou aguardando...</h1>'
+
+
+            // getElementsByName
+            // var msg = window.document.getElementsByName('msg')[0]
+            // msg.style.color = 'green'
+            // msg.innerHTML = '<h1>Estou te hackeando...</h1>'
+
+
+            // getElementsByClassName
+            // var msg = window.document.getElementsByClassName('msg')[0]
+            // msg.style.background = 'green'
+            // msg.style.color = 'white'
+            // msg.style.display = 'inline'
+            // msg.style.border = 'solid 2px white'
+            // msg.style.borderRadius = '100px'
+            // msg.style.padding = '10px'
+            // msg.innerHTML = 'Estou te hackeando...'
+
+
+            // querySelector
+            // var msg = window.document.querySelector('div#msg')
+            // msg.style.color = 'green'
+        </script>
+    </body>
+
+</html>

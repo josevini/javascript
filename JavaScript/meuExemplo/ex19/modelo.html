@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Controle</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="fundo">Fundo da Página:</label> 
+                <input type="color" name="fundo" id="fundo" value="#6ba5f1">
+            </p>
+
+            <p>
+                <label for="tfonte">Tamanho da Fonte:</label> 
+                <input type="number" name="tfonte" id="tfonte">
+            </p>
+
+            <p>
+                <label for="cfonte">Cor da Fonte:</label> 
+                <input type="color" name="cfonte" id="cfonte">
+            </p>
+
+            <p>
+                <label for="fonte">Fonte da Página:</label>  
+                <select name="fonte" id="fonte">
+                    <option>Fontes</option>
+                    <option value="Arial" selected>Arial</option>
+                    <option value="Callibri">Callibri</option>
+                    <option value="monospace">Monospace</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+            </p>
+
+            <input type="button" value="Personalizar" onclick="personalizar()">
+        </div>
+        <div>
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy;ViniciusSilva</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
