@@ -6,5 +6,3 @@ for (pos in cpf) {
     }
 }
 
-let fatia = novo_cpf.slice(-2)
-console.log(fatia[0])

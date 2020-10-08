@@ -41,8 +41,8 @@ function cpf_valido () {
 function msg () {
     let res = window.document.getElementById('res')
     if (cpf_valido()) {
-        res.innerHTML `<h2>CPF Válido</h2>`
+        res.innerHTML = `<p>CPF Válido</p>`
     } else {
-        res.innerHTML `<h2>CPF Válido</h2>`
+        res.innerHTML = `<p>CPF Inválido</p>`
     }
 }

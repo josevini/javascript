@@ -15,16 +15,12 @@ h1 {
     text-align: center;
 }
 
-.ab {
-    background-color: rgba(37, 36, 36, 0.219);
-    padding: 30px;
-}
-
 .form {
     display: flex;
     justify-content: space-evenly;
 }
 
 #res {
-
+    display: flex;
+    justify-content: space-evenly;
 }
