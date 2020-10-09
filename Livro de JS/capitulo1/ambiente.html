@@ -7,8 +7,10 @@
     </head>
     <body>
         <script>
-            function teclar () {
-                
+            document.addEventListener('keydown', teclar)
+            function teclar (event) {
+                const tecla = event.key
+                alert(tecla)
             }
         </script>
     </body>
