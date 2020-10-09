@@ -5,10 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Valide seu CPF</title>
         <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/script.js"></script>
     </head>
     <body>
+        <h1>Validar CPF</h1>
         <div id="corpo">
-            
+            <div class="form">
+                <!-- <div class="ab">
+                    A
+                </div>
+
+                <div class="ab">
+                    B
+                </div> -->
+                <p><label for="form_cpf">CPF: <input type="text" id="form_cpf" maxlength="14" size="11"></label></p>
+                <p><button onclick="validar()">Validar</button></p>
+            </div>
+            <div id="res">
+
+            </div>
         </div>
     </body>
 </html>
