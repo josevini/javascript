@@ -1,5 +1,10 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
 #corpo {
     background-color: #F7E018;
+    box-shadow: 10px 10px 40px grey;
     width: 700px;
     height: 500px;
     margin: auto;
