@@ -98,7 +98,8 @@
             })
 
             Vue.component('todo-item', {
-                template: '<li>Isso é um item</li>'
+                props: ['todo'],
+                template: '<li>{{ todo }}</li>'
             })
 
             var app_teste = new Vue({
