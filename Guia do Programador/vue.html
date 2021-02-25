@@ -39,6 +39,12 @@
             <input v-model="message">
         </div>
 
+        <ol>
+            <todo-item>
+                
+            </todo-item>
+        </ol>
+
         <script>
             var app = new Vue({
                 el: "#app",
@@ -90,6 +96,13 @@
                     message: "Olá, Vue!"
                 }
             })
+
+            Vue.component('todo-item', {
+                template: '<li>Isso é um item</li>'
+            })
+
+            var app = new Vue()
+
         </script>
     </body>
 </html>
