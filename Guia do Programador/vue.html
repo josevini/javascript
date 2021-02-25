@@ -39,7 +39,7 @@
             <input v-model="message">
         </div>
 
-        <ol>
+        <ol id="teste">
             <todo-item>
                 
             </todo-item>
@@ -101,7 +101,9 @@
                 template: '<li>Isso é um item</li>'
             })
 
-            var app = new Vue()
+            var app_teste = new Vue({
+                el: '#teste'
+            })
 
         </script>
     </body>
