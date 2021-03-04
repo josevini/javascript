@@ -14,3 +14,15 @@ function showInfo (n, s, i) {
 }
 
 showInfo(nome, sobrenome, idade)
+
+function retornaSoma (n1, n2) {
+    /*
+        Guarda a soma entre
+        dois argumentos
+    */
+    var soma = n1 + n2
+    return soma // retorna a soma
+}
+
+var resultado = retornaSoma(3, 4)
+console.log(`Resultado: ${resultado}`)
