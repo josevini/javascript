@@ -25,10 +25,16 @@
 
         var pares = ''
         for (var prop in livro) {
-            pares += prop + ': ' + livro[prop] + '\n'
+            if (typeof livro[prop] == 'object') {
+                for (var prop1 in livro[prop]) {
+                    pares += `${prop1}: ${livro[prop][prop1]} <br>`
+                }
+            } else {
+                pares += `${prop}: ${livro[prop]} <br>`
+            }
         }
 
-        alert(pares)
+        document.write(pares)
     </script>
 </body>
 </html>
