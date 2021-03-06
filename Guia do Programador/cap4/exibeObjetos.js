@@ -2,7 +2,7 @@
     Exibindo objetos com for in
 */
 
-pessoa = {
+var pessoa = {
     'nome': 'Vinicius',
     'sobrenome': 'Silva',
     'idade': 18
