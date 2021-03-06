@@ -8,7 +8,14 @@
 </head>
 <body>
     <script>
-        
+        function Cilindro(r, h) {
+            this.raioBase = r
+            this.altura = h
+        }
+
+        c1 = new Cilindro(2, 5)
+        document.writeln(`Raio da base: ${c1.raioBase}`)
+        document.write(`Altura: ${c1.altura}`)
     </script>
 </body>
 </html>
