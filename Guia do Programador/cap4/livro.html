@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        var livro = {
+            titulo: 'AJAX com JQuery',
+            autor: 'Mauríciu Sumy Silva',
+            paginas: 432,
+            preco: 'R$69,00',
+            capitulos: {
+                capitulo1: 'Revisão AJAX',
+                capitulo2: 'Funções para Requisições AJAX',
+                capitulo3: 'Eventos e Miscelânias',
+                capitulo4: 'Requisições XML',
+                capitulo5: 'Introdução ao formato JSON',
+                capitulo6: 'Requisições JSON'
+            }
+        }
+
+        var pares = ''
+        for (var prop in livro) {
+            if (typeof livro[prop] == 'object') {
+                for (var prop1 in livro[prop]) {
+                    pares += `${prop1}: ${livro[prop][prop1]} <br>`
+                }
+            } else {
+                pares += `${prop}: ${livro[prop]} <br>`
+            }
+        }
+
+        document.write(pares)
+    </script>
+</body>
+</html>
