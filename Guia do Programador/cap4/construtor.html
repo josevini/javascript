@@ -11,15 +11,13 @@
         function Cilindro(r, h) {
             this.raioBase = r
             this.altura = h
-
-            function areaBase() {
+            this.areaBase = function getAreaBase() {
                 return Math.PI * Math.pow(this.raioBase, 2)
             }
         }
 
         c1 = new Cilindro(2, 5)
-        document.write(`Raio da base: ${c1.raioBase} <br> Altura: ${c1.altura}`)
-        document.write(c1.areaBase())
+        document.write(`Raio da base: ${c1.raioBase} <br> Altura: ${c1.altura} <br> Área base: ${c1.areaBase()}`)
     </script>
 </body>
 </html>
