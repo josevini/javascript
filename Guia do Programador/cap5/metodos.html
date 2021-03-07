@@ -8,7 +8,17 @@
 </head>
 <body>
     <script>
+        var marcas = ['Samsung', 'Motorola', 'Lenovo']
         
+        marcas = marcas.concat('Apple', 'OnePlus') // Adiciona elementos no final do array
+
+        valida_tipo = function (v, i, a) {
+            if (typeof v == 'string') {
+                return true
+            } return false
+        } // Retorna true se todos os elementos forem string
+
+        document.write(marcas.every(valida_tipo)) // Percorre CADA elemento do array e executa uma função callback
     </script>
 </body>
 </html>
