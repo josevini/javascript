@@ -10,7 +10,7 @@
     <script>
         var marcas = ['Samsung', 'Motorola', 'Lenovo']
         
-        novo_array = marcas.concat('Apple', 'OnePlus') // O método concat() retorna um novo array contendo todos os arrays ou valores passados como parâmetro
+        novo_array = marcas.concat('Apple', 'OnePlus') // O método concat() retorna um novo array contendo todos os arrays ou valores passados como parâmetro.
 
         valida_tipo = function (v) {
             return (typeof v == 'string')
@@ -24,7 +24,14 @@
             return (v % 2 == 0)
         }
 
-        document.write(numeros.filter(numeros_pares)) // O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida. 
+        numeros.filter(numeros_pares) // O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
+        var nomes = new Array('Vinicius', 'Alessandra')
+        var msg = ''
+        exibeArray = function (v, i) {
+            document.write(`nomes[${i}] = ${v} <br>`)
+        }
+        nomes.forEach(exibeArray) // O método forEach() executa uma dada função em cada elemento de um array.
     </script>
 </body>
 </html>
