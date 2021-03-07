@@ -9,8 +9,10 @@
 <body>
     <script>
         var nomes = ['Vinicius', 'Alessandra', 'Niara', 'Antony']
+        var cont = 0
         for (var pos in nomes) {
-            document.write(`${pos + 1}° nome: ${nomes[pos]} <br>`)
+            cont++            
+            document.write(`${cont}° nome: ${nomes[pos]} <br>`)
         }
     </script>
 </body>
