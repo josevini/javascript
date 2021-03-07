@@ -10,15 +10,21 @@
     <script>
         var marcas = ['Samsung', 'Motorola', 'Lenovo']
         
-        marcas = marcas.concat('Apple', 'OnePlus') // Adiciona elementos no final do array
+        novo_array = marcas.concat('Apple', 'OnePlus') // O método concat() retorna um novo array contendo todos os arrays ou valores passados como parâmetro
 
-        valida_tipo = function (v, i, a) {
-            if (typeof v == 'string') {
-                return true
-            } return false
-        } // Retorna true se todos os elementos forem string
+        valida_tipo = function (v) {
+            return (typeof v == 'string')
+        } // Retorna true se o elemento for uma string
 
-        document.write(marcas.every(valida_tipo)) // Percorre CADA elemento do array e executa uma função callback
+        marcas.every(valida_tipo) // O método every() testa se todos os elementos do array passam pelo teste implementado pela função fornecida.
+
+        var numeros = Array(1, 2, 3, 4, 5, 6)
+
+        numeros_pares = function (v) {
+            return (v % 2 == 0)
+        }
+
+        document.write(numeros.filter(numeros_pares)) // O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida. 
     </script>
 </body>
 </html>
