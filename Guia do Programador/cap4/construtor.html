@@ -11,8 +11,23 @@
         function Cilindro(r, h) {
             this.raioBase = r
             this.altura = h
-            this.areaBase = function getAreaBase() {
-                return Math.PI * Math.pow(this.raioBase, 2)
+            
+            this.areaBase = function calculaAreaBase() {
+                aBase = Math.PI * Math.pow(this.raioBase, 2)
+                return aBase
+            }
+
+            this.areaLateral = function calculaAreaLateral() {
+                aLateral = 2 * Math.PI * this.raioBase * this.altura
+                return aLateral
+            }
+
+            this.areaTotal = function calculaAreaTotal() {
+                return 2 * aBase + aLateral
+            }
+
+            this.volume = function calculaVolume() {
+                return aBase * this.altura
             }
         }
 
