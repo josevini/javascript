@@ -12,7 +12,7 @@
         
         marcas = marcas.concat('Apple', 'OnePlus') // O método concat() retorna um novo array contendo todos os arrays ou valores passados como parâmetro.
 
-        valida_tipo = function (v) {
+        valida_tipo = function (valor) {
             return (typeof v == 'string')
         } // Retorna true se o elemento for uma string
 
@@ -42,7 +42,7 @@
 
         dobro = function (valor) {
             return (valor * 2)
-        }
+        } // Retorna o dobro dos valores
 
         var numeros_dobro = numeros.map(dobro) // O método map() invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.
 
