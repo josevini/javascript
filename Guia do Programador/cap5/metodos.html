@@ -32,6 +32,11 @@
             document.write(`nomes[${i}] = ${v} <br>`)
         }
         nomes.forEach(exibeArray) // O método forEach() executa uma dada função em cada elemento de um array.
+
+        nomes.indexOf('Vinicius') // O método indexOf() retorna o índice da primeira ocorrência do valor fornecido em searchValue, começando a busca a partir de fromIndex. Retorna -1 se o valor não for encontrado.
+
+        var valores = [1, 'a', -4, {x: 10, y: -2}, 'a', 'b']
+        alert(valores.lastIndexOf('a')) // Tem a mesma funcionalidade do indexOf(), mas começa a procurar a partir do último índice.
     </script>
 </body>
 </html>
