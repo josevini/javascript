@@ -8,11 +8,19 @@
 </head>
 <body>
     <script>
-        function exibeMensagem() {
-            alert(msg)
+        function exibeMensagem(msg) {
+            alert(msg) // Função sem retorno
+        }
+        exibeMensagem('JavaScript é fácil')
+
+        function somar(n1, n2) {
+            return n1 + n2 // Função com retorno
         }
 
-        exibeMensagem('JavaScript é fácil')
+        var soma = somar(5, 2) // Retorna o resultado para a variável soma
+        exibeMensagem(`A soma vale: ${soma}`)
+
+
     </script>
 </body>
 </html>
