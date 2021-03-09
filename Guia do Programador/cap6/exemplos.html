@@ -26,6 +26,12 @@
 
         var media = new Function('n1', 'n2', 'return (n1 + n2) / 2')
         exibeMensagem(`Média: ${media(7, 8)}`)
+
+        var calcIdade = function(ano_atual, ano_nasc) {
+            return ano_atual - ano_nasc
+        }
+
+        exibeMensagem(`Idade: ${calcIdade(2021, 2002)} anos`)
     </script>
 </body>
 </html>
