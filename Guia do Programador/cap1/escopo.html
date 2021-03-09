@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Variável</title>
+</head>
+<body>
+    <script>
+        /*
+            Conceitos relativos ao EcmaScript 5
+
+            O uso palavra-chave var cria uma variável de escopo local
+            A omissão da palavra-chave var cria uma variável de escopo global
+        */
+
+        returnMsg1 = function () {
+            msg = 'Hello, World!'
+            alert(msg)
+        }
+
+        returnMsg2 = function () {
+            var msg = 'Hello, JavaScript!'
+            alert(msg)
+        }
+
+        returnMsg1()
+        returnMsg2()
+        alert(msg)
+    </script>
+</body>
+</html>
