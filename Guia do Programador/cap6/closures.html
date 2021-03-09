@@ -8,7 +8,14 @@
 </head>
 <body>
     <script>
-        
+        // Closure é um conceito que está ligado ao confinamento de uma função. É quando uma função é limitada ao escopo local de outra função.
+
+        function msg1() {
+            alert('Função externa!')
+            function msg2() {
+                alert('Função interna') // Função confinada
+            }
+        }
     </script>
 </body>
 </html>
