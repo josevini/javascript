@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+
         function exibeMensagem(msg) {
             alert(msg) // Função sem retorno
         }
@@ -20,7 +21,11 @@
         var soma = somar(5, 2) // Retorna o resultado para a variável soma
         exibeMensagem(`A soma vale: ${soma}`)
 
+        var dobro = new Function("n1", "return n1 * 2")
+        exibeMensagem(`Dobro: ${dobro(4)}`)
 
+        var media = new Function('n1', 'n2', 'return (n1 + n2) / 2')
+        exibeMensagem(`Média: ${media(7, 8)}`)
     </script>
 </body>
 </html>
