@@ -16,6 +16,15 @@
                 alert('Função interna') // Função confinada
             }
         }
+
+        /*
+            A JavaScript prevê um mecanismo de escape para a closure. O mecanismo consiste em atribuir a função interna a uma
+            referência (variável) global e chamá-la fora do escopo da função externa.
+        */
+
+        function funcExterna2() {
+            alert('Função externa 2!')
+        }
     </script>
 </body>
 </html>
