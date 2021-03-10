@@ -22,8 +22,14 @@
             referência (variável) global e chamá-la fora do escopo da função externa.
         */
 
+        var funcaoInterna
+
         function funcExterna2() {
             alert('Função externa 2!')
+            function funcInterna2() {
+                alert('Função interna 2!')
+            }
+            funcaoInterna = funcInterna2
         }
     </script>
 </body>
