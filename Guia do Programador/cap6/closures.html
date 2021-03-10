@@ -22,7 +22,7 @@
             referência (variável) global e chamá-la fora do escopo da função externa.
         */
 
-        var funcaoInterna
+        var funcaoInterna2
 
         function funcExterna2() {
             alert('Função externa 2!')
@@ -35,6 +35,16 @@
         /*
             Outra forma de escape é retornar a função interna e capturar com uma variável fora do escopo da função externa.
         */
+
+        funcExterna3 = function() {
+            alert('Função externa 3!')
+            funcInterna3 = function() {
+                alert('Função interna 3!')
+            }
+            return funcInterna3
+        }
+
+        var funcaoInterna3 = funcExterna3()
     </script>
 </body>
 </html>
