@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos para Arrays</title>
+</head>
+<body>
+    <script>
+        var marcas = ['Samsung', 'Motorola', 'Lenovo']
+        
+        marcas = marcas.concat('Apple', 'OnePlus') // O método concat() retorna um novo array contendo todos os arrays ou valores passados como parâmetro.
+
+        valida_tipo = function (valor) {
+            return (typeof v == 'string')
+        } // Retorna true se o elemento for uma string
+
+        marcas.every(valida_tipo) // O método every() testa se todos os elementos do array passam pelo teste implementado pela função fornecida.
+
+        var numeros = Array(1, 2, 3, 4, 5, 6)
+
+        numeros_pares = function (v) {
+            return (v % 2 == 0)
+        } // Retorna números pares
+
+        numeros.filter(numeros_pares) // O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
+        var nomes = new Array('Vinicius', 'Alessandra')
+        var msg = ''
+        exibeArray = function (v, i) {
+            // document.write(`nomes[${i}] = ${v} <br>`)
+        }
+        nomes.forEach(exibeArray) // O método forEach() executa uma dada função em cada elemento de um array.
+
+        nomes.indexOf('Vinicius') // O método indexOf() retorna o índice da primeira ocorrência do valor fornecido em searchValue, começando a busca a partir de fromIndex. Retorna -1 se o valor não for encontrado.
+
+        var valores = [1, 'a', -4, {x: 10, y: -2}, 'a', 'b']
+        valores.lastIndexOf('a') // Tem a mesma funcionalidade do indexOf(), mas começa a procurar a partir do último índice.
+
+        var palavras = ['Olá', 'Mundo!']
+
+        var frase = palavras.join(', ') // O método join() junta todos os elementos de um array (ou um array-like object) em uma string e retorna esta string.
+
+        dobro = function (valor) {
+            return (valor * 2)
+        } // Retorna o dobro dos valores
+
+        var numeros_dobro = numeros.map(dobro) // O método map() invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.
+
+        var numeros2 = [2, 4, 6, 8, 11]
+        var numeros_retirado = numeros2.pop() // O método pop() remove o último elemento de um array e retorna aquele elemento.
+
+        var linguagens = ['JavaScript', 'PHP', 'C']
+        var comprimento = linguagens.push('Python', 'C#') // O método push() adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.
+
+        var somar = function(v1, v2) {
+            return v1 + v2
+        }
+
+        var soma_numeros = numeros.reduce(somar) // O método reduce() executa uma função reducer (fornecida por você) para cada elemento do array, resultando num único valor de retorno.
+
+        numeros.reduceRight(somar) // Tem a mesma função do reduce(), mas começa a partir do final do array.
+
+        nomes.reverse() // O método reverse() inverte os itens de um array. O primeiro elemento do array se torna o último e o último torna-se o primeiro.
+
+        var valor_removido = valores.shift() // O método shift() remove o primeiro elemento de um array e retorna esse elemento. Este método muda o tamanho do array.
+
+        var novo_array = marcas.slice(0, 2) // O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é necessário) de um array original. O Array original não é modificado
+
+        numeros.some(numeros_pares) // O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é necessário) de um array original. O Array original não é modificado
+
+        var alfabeto_invertido = ['f', 'e', 'd', 'c', 'b', 'a']
+        var alfabeto = alfabeto_invertido.sort() // O método sort() ordena os elementos do próprio array e retorna o array.
+
+        numeros.splice(0, 3, 7) // O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
+
+        var numeros_string = numeros.toString() // Para objetos do tipo Array, o método toString() concatena todos os valores em apenas uma string.
+
+        var novo_comp = nomes.unshift('Niara', 'Antony') // O método unshift() adiciona um ou mais elementos no início de um array e retorna o número de elementos (propriedade length) atualizado.
+    </script>
+</body>
+</html>
