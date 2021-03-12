@@ -32,7 +32,13 @@
                 A propriedade length especifica o número de argumentos esperados pela função.
             */
 
-            
+            function somar (n1, n2) {
+                total_args_passados = arguments.length
+                total_args_esperados = somar.length
+                alert(total_args_esperados) // Mostra quantos argumentos a função deve receber
+                alert(total_args_passados) // Mostra quantos argumentos a função recebeu
+                return n1 + n2
+            }
         </script>
     </body>
 </html>
