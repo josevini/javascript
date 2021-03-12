@@ -16,11 +16,12 @@
         }
 
         function ApartamentoVenda(local, quartos, garagem, quantidade, vendidos) {
-            this.local = local
+            ApartamentoDescricao.call(this, local, quartos, garagem)
             this.quantidade = quantidade
             this.vendidos = vendidos
-            ApartamentoDescricao(this, local, quartos, garagem)
         }
+
+        var zonaSul = new ApartamentoVenda('Zona Sul', 4, 'sim', 12, 7)
 
         // O método apply() chama uma função com um dado valor this e arguments providos como um array (ou um objeto parecido com um array).
 
