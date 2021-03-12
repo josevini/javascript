@@ -8,7 +8,16 @@
     </head>
     <body>
         <script>
+            // O objeto arguments é como um objeto Array correspondendo aos argumentos passados para uma função.
             
+            function media () {
+                var soma = 0, valores = arguments, total = arguments.length
+                for (var pos in valores) {
+                    soma += valores[pos]
+                }
+                return soma / total
+            }
+
         </script>
     </body>
 </html>
