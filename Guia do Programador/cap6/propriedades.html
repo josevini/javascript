@@ -28,9 +28,7 @@
                 } return 1
             }
 
-            /*
-                A propriedade length especifica o número de argumentos esperados pela função.
-            */
+            // A propriedade length especifica o número de argumentos esperados pela função.
 
             function somar (n1, n2) {
                 total_args_passados = arguments.length
@@ -38,6 +36,14 @@
                 alert(total_args_esperados) // Mostra quantos argumentos a função deve receber
                 alert(total_args_passados) // Mostra quantos argumentos a função recebeu
                 return n1 + n2
+            }
+
+            // construct é uma referência à função que cria um objeto (função construtora).
+
+            function Pessoa(n, s, i) {
+                this.nome = n
+                this.sobrenome = s
+                this.idade = i
             }
         </script>
     </body>
