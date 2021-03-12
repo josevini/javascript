@@ -11,7 +11,7 @@
             /*
                 O objeto arguments é como um objeto Array correspondendo aos argumentos passados para uma função.
 
-                arguments tem duas propriedades: length e callee
+                arguments tem duas propriedades: length e callee. length guarda a quantidade de argumentos passados para a função. callee permite chamar uma função anônima dentro da própria função.
             */
 
             function media () {
@@ -20,6 +20,12 @@
                     soma += valores[pos]
                 }
                 return soma / total
+            }
+
+            function fatorial (num) {
+                if (num > 0) {
+                    return num * arguments.callee(num-1) // A função é chamada de forma recursiva
+                } return 1
             }
 
         </script>
