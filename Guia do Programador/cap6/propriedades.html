@@ -44,7 +44,17 @@
                 this.nome = n
                 this.sobrenome = s
                 this.idade = i
-                alert(this.constructor) // Exibe um alerta sempre que o construtor é iniciado
+                alert(this.constructor) // Exibe um alerta sempre que o construtor é iniciado.
+            }
+
+            /*
+                A propriedade prototype permite adicionar novas propriedades e/ou métodos a um objeto.
+
+                Objeto.prototype.atributoOuMetodo
+            */
+
+            Pessoa.prototype.fazerAniversario = function () {
+                this.idade += 1
             }
         </script>
     </body>
