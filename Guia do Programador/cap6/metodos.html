@@ -15,6 +15,13 @@
             this.garagem = garagem
         }
 
+        function ApartamentoVenda(local, quartos, garagem, quantidade, vendidos) {
+            this.local = local
+            this.quantidade = quantidade
+            this.vendidos = vendidos
+            ApartamentoDescricao(this, local, quartos, garagem)
+        }
+
         // O método apply() chama uma função com um dado valor this e arguments providos como um array (ou um objeto parecido com um array).
 
         // O método toString() retorna uma string representando o código fonte da função.
