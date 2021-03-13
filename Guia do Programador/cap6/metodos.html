@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        // O método call() invoca uma função com um dado valor this  e argumentos passados individualmente.
+        // O método call() invoca uma função com um dado valor this e argumentos passados individualmente.
         function ApartamentoDescricao(local, quartos, garagem) {
             this.local = local
             this.quartos = quartos
@@ -24,6 +24,13 @@
         var zonaSul = new ApartamentoVenda('Zona Sul', 4, 'sim', 12, 7)
 
         // O método apply() chama uma função com um dado valor this e arguments providos como um array (ou um objeto parecido com um array).
+        function DadosPessoa(nome, sobrenome, idade, solteiro) {
+            this.nome = nome
+            this.sobrenome = sobrenome
+            this.idade = idade
+            this.solteiro = solteiro
+        }
+
 
         // O método toString() retorna uma string representando o código fonte da função.
         var somar = new Function (
