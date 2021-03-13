@@ -31,7 +31,12 @@
         }
 
         function Profissional(nome, sobrenome, idade, area, empregado) {
-            DadosPessoa.apply(this, arguments)
+            DadosPessoa.apply(this, [nome, sobrenome, idade])
+            /*
+                Sintaxe alternativa:
+
+                DadosPessoa.apply(this, new Array(nome, sobrenome, idade))
+            */
             this.area = area
             this.empregado = empregado
         }
