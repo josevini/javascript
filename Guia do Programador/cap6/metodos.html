@@ -24,13 +24,19 @@
         var zonaSul = new ApartamentoVenda('Zona Sul', 4, 'sim', 12, 7)
 
         // O método apply() chama uma função com um dado valor this e arguments providos como um array (ou um objeto parecido com um array).
-        function DadosPessoa(nome, sobrenome, idade, solteiro) {
+        function DadosPessoa(nome, sobrenome, idade) {
             this.nome = nome
             this.sobrenome = sobrenome
             this.idade = idade
-            this.solteiro = solteiro
         }
 
+        function Profissional(nome, sobrenome, idade, area, empregado) {
+            DadosPessoa.apply(this, arguments)
+            this.area = area
+            this.empregado = empregado
+        }
+
+        var eu = new Profissional('Vinicius', 'Silva', 18, 'TI', false)
 
         // O método toString() retorna uma string representando o código fonte da função.
         var somar = new Function (
