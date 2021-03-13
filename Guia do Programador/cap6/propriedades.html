@@ -8,16 +8,19 @@
     </head>
     <body>
         <script>
-
             // A propriedade length especifica o número de argumentos esperados pela função.
 
             function somar (n1, n2) {
-                total_args_passados = arguments.length
                 total_args_esperados = somar.length
                 alert(total_args_esperados) // Mostra quantos argumentos a função deve receber
-                alert(total_args_passados) // Mostra quantos argumentos a função recebeu
                 return n1 + n2
             }
+
+            /*
+                A propriedade somente-leitura name de um objeto Function indica o nome da função como especificado quando esta foi criada, ou "anonymous" para funções criadas anonimamente.
+            */
+
+            var nome_func = somar.name // retorna somar para a variável
 
             // construct é uma referência à função que cria um objeto (função construtora).
 
