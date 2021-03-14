@@ -9,11 +9,25 @@
 <body>
     <script>
         // A propriedade length retorna a quantidade de caracteres em uma string, ou seja, seu comprimento
-        var nome = 'Vinicius Silva', tamanho = nome.length // retorna o comprimento para a variável tamanho
+        var nome_completo = 'Vinicius Silva', tamanho = nome_completo.length // retorna o comprimento para a variável tamanho
 
         // A propriedade constructor é uma referência à função que cria um objeto (função construtora).
         var str = new String('String é o construtor do objeto str')
-        str.constructor // retorna function String() { [native code] } 
+        str.constructor // retorna function String() { [native code] }
+
+        /*
+            A propriedade prototype permite adicionar novas propriedades e/ou métodos a um objeto.
+
+            Objeto.prototype.atributoOuMetodo
+        */
+        var nome = new String('Vinicius')
+        String.prototype.ultimaLetra = function () {
+            return this[this.length - 1]
+        }
+        String.prototype.getDobro = function () {
+            var d = this.length * 2
+            return d
+        }
     </script>
 </body>
 </html>
