@@ -12,7 +12,9 @@
         var nome = 'Vinicius', primeira_letra = nome.charAt(0) // retorna o caractere no índice 0 para a variável
 
         // O método charCodeAt() retorna um número inteiro entre 0 e 65535 que representa a unidade de código UTF-16 no índice fornecido.
-        var codificacao = nome.charCodeAt(0)
+        var codificacao = nome.charCodeAt(nome.length - 1)
+
+        var sobrenome = 'Silva', nome_completo = nome.concat(' ', sobrenome) // concatena as strings nome, ' ' e sobrenome e retorna para a string nome_completo
     </script>
 </body>
 </html>
