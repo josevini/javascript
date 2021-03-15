@@ -38,6 +38,9 @@
 
         // O método replace() retorna uma nova string com algumas ou todas as correspondências de um padrão substituídas por um determinado caractere (ou caracteres).
         var moeda = 'R$200.00'.replace('.', ',')
+
+        // O método search() realiza uma busca por uma ocorrência entre uma expressão regular e uma String.
+        var str = "olá, Mundo!", re = /[A-Z]/g, res_busca = str.search(re) // retorna o índice da string que bate com a expressão regular, nesse caso, a primeira letra maiúscula encontrada.
     </script>
 </body>
 </html>
