@@ -37,6 +37,14 @@
 
         // A função Math.sqrt() retorna a raiz quadrada de um número.
         Math.sqrt(81) // retorna a raiz quadrada de 81
+
+        // A função Math.random() retorna um número pseudo-aleatório no intervalo 0 a 1.
+        Math.random() // retorna um valor entre 0 e 1 (maior que zero e menor que 1)
+
+        geraNumero = function(min, max) {
+            var valor_gerado = Math.random(), novo_valor = Math.trunc(valor_gerado * (max - min) + min)
+            return 'Valor gerado: ' + valor_gerado + '\n\n' + 'Novo valor: ' + novo_valor
+        }
     </script>
 </body>
 </html>
