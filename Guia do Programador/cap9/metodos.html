@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos do Objeto Number</title>
+</head>
+<body>
+    <script>
+        // valueOf() retorna o valor primitivo do objeto
+        var num = new Number(23)
+        num // retorna Number {23}
+        num.valueOf() // retorna 23
+
+        // toString() converte um número para uma string e o retorna
+        var str_num = num.toString() // faz a conversão
+
+        // toFixed() define a quantidade de casas decimais de um objeto number através de um argumento.
+        num.toFixed(2) // retorna 23.00
+
+        // toPrecision() define a quantidade de dígitos de um objeto number através de um argumento.
+        num.toPrecision(1) // retorna 2e+1
+
+        /*
+            toExponential() retorna a representação de um número em notação científica.
+
+            o método tem um argumento opcional que define o número de casas decimais.
+        */
+        num.toExponential(1) // retorna 2.3e+1 (23 em notação científica)
+    </script>
+</body>
+</html>
