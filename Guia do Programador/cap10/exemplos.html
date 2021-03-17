@@ -21,6 +21,9 @@
         for (var pos in nome) {
             document.write(`<p>Nome: ${nome[pos]} | Resultado: ${busca_nomes.test(nome[pos])}</p>`)
         }
+
+        var busca_numeros = new RegExp(/[1-6]/)
+        document.write(busca_numeros.test('T3ST3'))
     </script>
 </body>
 </html>
