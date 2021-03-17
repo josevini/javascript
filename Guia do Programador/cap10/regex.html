@@ -5,38 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regular Expressions</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+        }
+
+        main#conteudo {
+            max-width: 850px;
+            min-width: 650px;
+            margin: auto;
+            padding: 10px 30px 25px 30px;
+            background-color: white;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.411);
+        }
+    </style>
 </head>
 <body>
-    <script>
-        /*
-            As RegEx ou Regular Expressions (Expressões Regulares) são conjuntos de símbolos e caracteres literais
-            que tem como funcionalidade validar se uma string casa com os padrões fornecidos na expressão.
-        */
-
-        /*
-            As regex têm uma função construtora chamada RegExp() que recebe dois parâmetros: /pattern/flags
-            
-            RegExp(pattern[, flags])
-        */
-
-        var re = new RegExp() // Construtor do objeto;
-
-        // var re = /pattern/flags - Sintaxe Literal
-
-        /*
-            Pattern ou Padrão: é o argumento onde definimos a expressão que será utilizada para validar os dados.
-            
-            Flags ou Modificadores: este argumento define alguns requisitos para a busca. Um deles é diferenciar
-            ou não letras maiúsculas e minúsculas.
-        */
-
-        var exp = /ala/i // Esta expressão busca pela sequência de letras 'ala' (padrão). Já o i é uma flag que indica que ele não fará distinção entre maiúsculas e minúsculas
-
-        var textos = ['casa', 'mala', 'bola', 'bAlA']
-        document.write('<h2>Expressão usada: \\ala\\i</h2>')
-        for (var pos in textos) {
-            document.write(`<p>Palavra: ${textos[pos]} | Resultado: ${exp.test(textos[pos])}</p>`)
-        }
-    </script>
+    <main id="conteudo">
+        
+    </main>
 </body>
 </html>
