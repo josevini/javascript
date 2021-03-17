@@ -30,6 +30,8 @@
         }
 
         var busca_letras = new RegExp(/[a-z]/), letras = ['abcd', 'ABCD']
+
+        document.write('<h2>Expressão usada: ' + busca_letras + '</h2>')
         for (var pos in letras) {
             document.write(`<p>Letra: ${letras[pos]} | ${busca_letras.test(letras[pos])}</p>`)
         }
