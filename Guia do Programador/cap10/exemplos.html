@@ -8,12 +8,17 @@
 </head>
 <body>
     <script>
-        var exp = /ala/i, textos = ['casa', 'mala', 'bola', 'bAlA']
+        var exp = /ala/, textos = ['casa', 'mala', 'bola', 'bAlA']
         
-        document.write('<h2>Expressão usada: \\ala\\i</h2>')
+        document.write('<h2>Expressão usada: ' + exp + '</h2>')
         for (var pos in textos) {
             document.write(`<p>Palavra: ${textos[pos]} | Resultado: ${exp.test(textos[pos])}</p>`)
         }
+
+        var busca_nomes = /silva/i, nome = ['Vinicius Silva', 'Alessandra Gonzaga', 'Niara Silva']
+
+        document.write('<h2>Expressão usada: ' + busca_nomes + '</h2>')
+        document.write(busca_nomes.test(`${nome[0]}`))
     </script>
 </body>
 </html>
