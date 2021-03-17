@@ -8,7 +8,12 @@
 </head>
 <body>
     <script>
+        var exp = /ala/i, textos = ['casa', 'mala', 'bola', 'bAlA']
         
+        document.write('<h2>Expressão usada: \\ala\\i</h2>')
+        for (var pos in textos) {
+            document.write(`<p>Palavra: ${textos[pos]} | Resultado: ${exp.test(textos[pos])}</p>`)
+        }
     </script>
 </body>
 </html>
