@@ -28,6 +28,30 @@
             font-size: 1.13em;
             text-indent: 20px;
         }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 90%;
+        }
+
+        table, td {
+            border: 1px solid black;
+        }
+
+        tr:nth-child(1) {
+            background-color: rgb(216, 216, 216);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        td:nth-child(1) {
+            width: 18%;
+        }
+
+        td {
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +83,27 @@
             <em>Flags ou Modificadores:</em> este argumento define alguns requisitos para a busca. Um deles é diferenciar
             ou não letras maiúsculas e minúsculas.
         </p>
+        <h2>Modificadores</h2>
+        <p class="definicao">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque doloremque debitis, molestiae eius alias rem possimus modi, fuga laudantium aliquam ea numquam incidunt facilis et non atque placeat id odio!
+        </p>
+        <table id="modificadores">
+            <tr>
+                <td>Modificador<td>Condição
+            </tr>
+            <tr>
+                <td>i<td>Condição
+            </tr>
+            <tr>
+                <td>g<td>Condição
+            </tr>
+            <tr>
+                <td>m<td>Condição
+            </tr>
+            <tr>
+                <td>gi<td>Condição
+            </tr>
+        </table>
     </main>
 </body>
 </html>
