@@ -22,8 +22,10 @@
             document.write(`<p>Nome: ${nome[pos]} | Resultado: ${busca_nomes.test(nome[pos])}</p>`)
         }
 
-        var busca_numeros = new RegExp(/[1-6]/)
-        document.write(busca_numeros.test('T3ST3'))
+        var busca_numeros = new RegExp(/[0-3]/), msg = 'Ol4'
+
+        document.write('<h2>Expressão usada: ' + busca_numeros + '</h2>')
+        document.write(`<p>String: ${msg} | ${busca_numeros.test(msg)}</p>`)
     </script>
 </body>
 </html>
