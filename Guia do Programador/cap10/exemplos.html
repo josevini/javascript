@@ -28,6 +28,11 @@
         for (var pos in msg) {
             document.write(`<p>String: ${msg[pos]} | ${busca_numeros.test(msg[pos])}</p>`)
         }
+
+        var busca_letras = new RegExp(/[a-z]/), letras = ['abcd', 'ABCD']
+        for (var pos in letras) {
+            document.write(`<p>Letra: ${letras[pos]} | ${busca_letras.test(letras[pos])}</p>`)
+        }
     </script>
 </body>
 </html>
