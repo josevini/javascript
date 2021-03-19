@@ -1,0 +1,21 @@
+<title>teste01</title>
+<script>
+    function ok() {
+        var nome = window.document.querySelector("input#nome").value
+        var idade = window.document.querySelector("input#idade").value
+        localStorage.name = nome
+        localStorage.age = idade
+    }
+</script>
+
+Nome <input type="text" name="nome" id="nome">
+Idade <input type="number" name="idade" id="idade">
+<button onclick="ok()">OK</button>
+<p><button onclick="show()">Show</button></p>
+<script>
+
+    function show() {
+        alert("Último nome gravado: " + localStorage.name)
+        alert("Última idade gravada: " + localStorage.age)
+    }
+</script>
