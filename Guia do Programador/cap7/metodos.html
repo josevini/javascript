@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos para o Objeto String</title>
+</head>
+<body>
+    <script>
+        // O método charAt() retorna o caractere localizado no índice informado como argumento
+        var nome = 'Vinicius', primeira_letra = nome.charAt(0) // retorna o caractere no índice 0 para a variável
+
+        // O método charCodeAt() retorna um número inteiro entre 0 e 65535 que representa a unidade de código UTF-16 no índice fornecido.
+        var codificacao = nome.charCodeAt(nome.length - 1)
+
+        var sobrenome = 'Silva', nome_completo = nome.concat(' ', sobrenome) // concatena as strings nome, ' ' e sobrenome e retorna para a string nome_completo
+
+        // O método String.fromCharCode() retorna uma string criada ao usar uma sequência específica de valores Unicode.
+        var nova_string = String.fromCharCode(65, 66, 67);  // retorna "ABC"
+
+        // O método indexOf() retorna o índice da primeira ocorrência do valor fornecido em searchValue, começando a busca a partir de fromIndex. Retorna -1 se o valor não for encontrado.
+
+        var pos_letra = nome.indexOf('i') // retorna a posição de 'i' na string nome.
+
+        // O método lastIndexOf() retorna o índice da última ocorrência do valor especificado encontrado na String. Quando fromIndex é especificado, a pesquisa é realizada de trás para frente. Retorna -1 se o valor não for encontrado.
+
+        var pos_ultima_letra = nome.lastIndexOf('i') // retorna a posição de 'i' na string nome (começando a partir do último índice).
+
+        // O método localeCompare() retorna um número que indica se uma string de referência vem antes ou depois, ou é a mesma que a string fornecida na ordem de classificação.
+
+        var s1 = 'a', s2 = 'b',  res = s1.localeCompare(s2) // -1 caso s1 preceda s2; 0 caso sejam a mesma string; 1 caso s1 suceda s2;
+
+        // O método match() retorna uma correspondência entre uma string com uma expressão regular.
+        var str1 = "Para maiores informações, veja o Capítulo 3.4.5.1";
+        var regEx = /(capítulo \d+(\.\d)*)/i;
+        var res = str1.match(regEx);
+
+        // O método replace() retorna uma nova string com algumas ou todas as correspondências de um padrão substituídas por um determinado caractere (ou caracteres).
+        var moeda = 'R$200.00'.replace('.', ',')
+
+        // O método search() realiza uma busca por uma ocorrência entre uma expressão regular e uma String.
+        var str2 = "olá, Mundo!", re = /[A-Z]/g, res_busca = str2.search(re) // retorna o índice da string que bate com a expressão regular, nesse caso, a primeira letra maiúscula encontrada.
+
+        // O método slice() extrai uma parte de uma string e a retorna como uma nova string, sem modificar a string original.
+        var str3 = 'Eu amo JavaScript', start = 7, end = str3.length, res_string = str3.slice(start, end)
+
+        // O método split() divide uma String em uma lista ordenada de substrings, coloca essas substrings em um array e retorna o array.
+        var arq = 'index.html', nome_arq = arq.split('.')[0], ext_arq = arq.split('.')[1]
+
+        // O método substring() retorna a parte da string entre os índices inicial e final, ou até o final da string.
+        var msg = 'Olá', nova_msg = msg.substring(3, 0)
+
+        // O método toLowerCase() retorna o valor da string que foi chamada convertido para minúsculo.
+        var frase1 = 'JavaScript é fácil', frase2 = frase1.toLowerCase()
+
+        // O método toUpperCase() retorna o valor da string original convertido em letras maiúsculas.
+        var frase3 = frase1.toUpperCase()
+
+        // O método valueOf() retorna o valor primitivo de um objeto String.
+        var ling = new String('JavaScript')
+        ling.valueOf() // 'JavaScript'
+    </script>
+</body>
+</html>
