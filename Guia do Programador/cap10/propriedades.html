@@ -8,7 +8,10 @@
 </head>
 <body>
     <script>
-        
+        // A propriedade global guarda o estado da flag g, isto significa que ao utilizar o valor g dentro da expressão regular, a propriedade passará a valer true, falso caso contrário.
+
+        var exp1 = new RegExp(/^[a-z]$/, 'g')
+        exp1.global // retornar true
     </script>
 </body>
 </html>
