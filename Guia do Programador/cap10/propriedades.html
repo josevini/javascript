@@ -10,16 +10,19 @@
     <script>
         // A propriedade global guarda o estado da flag g, isto significa que ao utilizar o valor g dentro da expressão regular, a propriedade passará a valer true, falso caso contrário.
 
-        var exp1 = new RegExp(/[a-z]/, 'g')
+        var exp = new RegExp(/[a-z]/, 'g')
         exp1.global // retornar true
 
         // A propriedade ignoreCase guarda o estado da flag i, isto significa que ao utilizar o valor i dentro da expressão regular, a propriedade passará a valer true, falso caso contrário.
 
-        exp1.ignoreCase // retornar false
+        exp.ignoreCase // retornar false
 
         // A propriedade multline guarda o estado da flag m, isto significa que ao utilizar o valor m dentro da expressão regular, a propriedade passará a valer true, falso caso contrário.
 
-        exp1.multiline // retornar false
+        exp.multiline // retornar false
+
+        // A propriedade source retorna o código fonte da expressão em formato de string.
+        exp.source // retorna "[a-z]"
     </script>
 </body>
 </html>
