@@ -26,6 +26,9 @@
 
         // A propriedade lastIndex armazena a posição de todas as ocorrências que casam com o padrão fornecido na expressão regular. Precisa habilitar a busca global (flag g) para funcionar.
         
+        while (exp.test('Hello, World!')) {
+            alert(exp.lastIndex)
+        }
     </script>
 </body>
 </html>
