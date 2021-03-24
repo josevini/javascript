@@ -10,6 +10,7 @@
     <script>
         var url = "www.maujor.com/arquivo-numero.html" // transformar em "www.maujor.com/numero/arquivo.php"
         var padrao = /^(www[.maujorc]+\/)([arquivo]+)-([a-z]+).html/g
+        var nova_url = url.replace(padrao, '$1$3/2$.php')
     </script>
 </body>
 </html>
