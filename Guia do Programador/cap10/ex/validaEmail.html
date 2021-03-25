@@ -8,7 +8,9 @@
 </head>
 <body>
     <script>
-            
+        var padrao = /^[a-z|0-9]+[a-z|0-9|\.]+@[a-z]+\.[a-z]?/i, str = 'ferreiravini@gmail.com'
+        alert(padrao.test(str))
+        document.write(`<h1>${padrao.exec(str)}</h1>`)
     </script>
 </body>
 </html>
