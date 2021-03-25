@@ -7,10 +7,21 @@
     <title>Validar E-mail</title>
 </head>
 <body>
-    <label for="email">E-mail: <input type="txt" id="email"></label> <button>Validar</button>
+    <label for="email">E-mail: <input type="txt" id="email"></label>
+    <button onclick="validar()">Validar</button>
+
     <script>
-        // var padrao = /^([\w-]+(\.[\w-]+)*)@(( [\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\.[a-z]{2})?)$/i;
         // var padrao = /^([a-z|0-9]+)([a-z|0-9|\.]+)@([a-z]+)(\.[a-z]{3})/i
+        var padrao = /^([\w-]+(\.[\w-]+)*)@(( [\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\.[a-z]{2})?)$/i;
+        function validar() {
+            var email = document.getElementById('email').value
+            res = padrao.test(email)
+            if (res) {
+                alert('Válido')
+            } else {
+                alert('Inválido!')
+            }
+        }
     </script>
 </body>
 </html>
