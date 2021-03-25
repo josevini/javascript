@@ -15,8 +15,8 @@
         validar = function() {
             var cpf = window.document.querySelector('input#cpf')
             if (padrao.test(cpf.value)) {
-                alert('CPF válido!')
                 cpf.value = cpf.value.replace(padrao, '$1.$2.$3-$4')
+                alert('CPF válido!')
             } else {
                 alert('CPF inválido!')
             }
