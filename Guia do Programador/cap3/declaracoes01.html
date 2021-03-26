@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarações 01</title>
+</head>
+<body>
+    <script>
+        /*
+            var - declara uma variável
+            function - declara uma função
+            return - retorna um valor
+        */
+
+        var nome = 'Vinicius', sobrenome = 'Silva', idade = 18
+
+        function showInfo (n, s, i) {
+            alert(`${n} ${s} tem ${i} anos.`)
+        }
+
+        showInfo(nome, sobrenome, idade)
+
+        function retornaSoma (n1, n2) {
+            var soma = n1 + n2
+            return soma
+        }
+
+        var resultado = retornaSoma(3, 4)
+        alert(`Resultado: ${resultado}`)
+    </script>
+</body>
+</html>
