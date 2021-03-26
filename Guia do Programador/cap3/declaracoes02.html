@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarações 02</title>
+</head>
+<body>
+    <script>
+        /*
+            if (exp) {bloco} - testa se uma expressão lógica é
+            verdadeira se sim, executa o bloco.
+
+            else {bloco} - é executado caso o bloco do if seja falso
+
+            else if - estrutura aninhada
+
+            switch () {} - testa mútiplos valores
+        */
+
+        var media = 10
+
+        if (media < 5) {
+            alert('Reprovado')
+        } else if (media < 6) {
+            alert('Recuperação')
+        } else {
+            alert('Aprovado')
+        }
+
+        var op = 0
+
+        alert('1 - login\n2 - logout')
+        switch (op) {
+            case 1:
+                alert('Você fez login')
+                break
+            case 2:
+                alert('Você fez logout')
+                break
+            default:
+                alert('ERRO')
+        }
+    </script>
+</body>
+</html>
