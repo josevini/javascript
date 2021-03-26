@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarações 03</title>
+</head>
+<body>
+    <script>
+        /*
+            for/while/do while/for in - estruturas de repetição
+        */
+
+        var num = 1, end = 5
+
+        // for (num; num <= end; num++) {
+        //     alert(num)
+        // }
+
+        // while (num <= end) {
+        //     alert(num)
+        //     num += 1
+        // }
+
+        do {
+            alert(num)
+            num += 1
+        } while (num <= end)
+
+        pessoa = {
+            nome: 'Vinicius',
+            sobrenome: 'Silva'
+        }
+
+        for (valor in pessoa) {
+            alert(pessoa[valor])
+        }
+    </script>
+</body>
+</html>
