@@ -16,7 +16,10 @@
         UM_DIA = 24 * 60 * 60 * 1000
         window.onload = function () {
             if (diferenca > 0) {
-                
+                diasFaltando = Math.ceil(diferenca/UM_DIA)
+                document.forms[0].elements[0].value = 'Faltam' + diasFaltando + 'dias para o natal.'
+            } else {
+
             }
         }
     </script>
