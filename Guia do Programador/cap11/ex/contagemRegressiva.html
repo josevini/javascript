@@ -8,7 +8,11 @@
 </head>
 <body>
     <script>
-        
+        var agora, anoAtual, diaNatal, diferenca, UM_DIA, diasFaltando
+        agora = new Date() // Tue Mar 30 2021 09:32:09 GMT-0300 (Hora padrão de Brasília) 
+        anoAtual = agora.getFullYear() // 2021
+        diaNatal = new Date(anoAtual, 11, 25) // Sat Dec 25 2021 00:00:00 GMT-0300 (Hora padrão de Brasília)
+        diferenca = diaNatal.getTime() - agora.getTime() // 23293414362
     </script>
 </body>
 </html>
