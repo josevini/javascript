@@ -21,7 +21,8 @@
             } else if (diferenca < 0 && diferenca > -UM_DIA) {
                 document.forms[0].elements[0].value = 'Feliz Natal!'
             } else {
-                diaNatal = new Date(anoAtual+1, 11, 25, 00, 00, 00)
+                anoAtual = agora.getFullYear()
+                diaNatal = new Date(anoAtual, 11, 25, 00, 00, 00)
                 diferenca = diaNatal.getTime() - agora.getTime()
                 diasFaltando = Math.ceil(diferenca/UM_DIA)
                 document.forms[0].elements[0].value = 'Faltam ' + diasFaltando + ' dias para o natal.'
