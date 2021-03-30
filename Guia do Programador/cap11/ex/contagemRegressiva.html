@@ -20,6 +20,9 @@
                 document.forms[0].elements[0].value = 'Faltam' + diasFaltando + 'dias para o natal.'
             } else if (diferenca < 0 && diferenca > -UM_DIA) {
                 document.forms[0].elements[0].value = 'Feliz Natal!'
+            } else {
+                diaNatal = new Date(anoAtual+1, 11, 25)
+                
             }
         }
     </script>
