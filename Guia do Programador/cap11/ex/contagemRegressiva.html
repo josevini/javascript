@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva</title>
+</head>
+<body>
+    <script>
+        var agora, anoAtual, diaNatal, diferenca, UM_DIA, diasFaltando
+        agora = new Date() // Tue Mar 30 2021 09:32:09 GMT-0300 (Hora padrão de Brasília) 
+        anoAtual = agora.getFullYear() // 2021
+        diaNatal = new Date(anoAtual, 11, 25, 00, 00, 00) // Sat Dec 25 2021 00:00:00 GMT-0300 (Hora padrão de Brasília)
+        diferenca = diaNatal.getTime() - agora.getTime() // 23293414362
+        UM_DIA = 24 * 60 * 60 * 1000
+        window.onload = function () {
+            if (diferenca > 0) {
+                diasFaltando = Math.ceil(diferenca/UM_DIA)
+                document.forms[0].elements[0].value = 'Faltam ' + diasFaltando + ' dias para o natal.'
+            } else if (diferenca < 0 && diferenca > -UM_DIA) {
+                document.forms[0].elements[0].value = 'Feliz Natal!'
+            } else {
+                anoAtual = agora.getFullYear()
+                diaNatal = new Date(anoAtual, 11, 25, 00, 00, 00)
+                diferenca = diaNatal.getTime() - agora.getTime()
+                diasFaltando = Math.ceil(diferenca/UM_DIA)
+                document.forms[0].elements[0].value = 'Faltam ' + diasFaltando + ' dias para o natal.'
+            }
+        }
+    </script>
+    <form method="get">
+        <input type="text" size="40">
+    </form>
+</body>
+</html>
