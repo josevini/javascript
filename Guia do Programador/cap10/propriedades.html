@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades do Objeto RegExp</title>
+</head>
+<body>
+    <script>
+        // A propriedade global guarda o estado da flag g, isto significa que ao utilizar o valor g dentro da expressão regular, a propriedade passará a valer true, falso caso contrário.
+
+        var exp = new RegExp(/[a-z]/, 'g')
+        exp.global // retornar true
+
+        // A propriedade ignoreCase guarda o estado da flag i, isto significa que ao utilizar o valor i dentro da expressão regular, a propriedade passará a valer true, falso caso contrário.
+
+        exp.ignoreCase // retornar false
+
+        // A propriedade multline guarda o estado da flag m, isto significa que ao utilizar o valor m dentro da expressão regular, a propriedade passará a valer true, falso caso contrário.
+
+        exp.multiline // retornar false
+
+        // A propriedade source retorna o código fonte da expressão em formato de string.
+        exp.source // retorna "[a-z]"
+
+        // A propriedade lastIndex armazena a posição de todas as ocorrências que casam com o padrão fornecido na expressão regular. Precisa habilitar a busca global (flag g) para funcionar.
+        
+        while (exp.test('Hello, World!')) {
+            alert(exp.lastIndex)
+        }
+    </script>
+</body>
+</html>
