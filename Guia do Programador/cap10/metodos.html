@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos do Objeto RegExp</title>
+</head>
+<body>
+    <script>
+        // O método test() verifica se alguma ocorrência de uma string casa com o padrão definido em uma expressão regular.
+        
+        var exp = new RegExp(/[a-zA-Z]/, 'g')
+        exp.test('HELLO') // retorna true, pois as ocorrências casam com o padrão.
+
+        // O método exec() verifica se alguma ocorrência de uma string casa com o padrão definido em uma expressão regular e retorna a ocorrência.
+        
+        exp.exec('hello, world!') // retorna e
+
+        // MÉTODOS AUXILIARES
+
+        // O método replace() encontra em uma string as ocorrências definidas em regexp e substitui-as pela nova string.
+
+        var txt = 'Eu amo programar em JavaScript', padrao = /[aA]/g
+        txt.replace(padrao, '@') // retorna "Eu @mo progr@m@r em J@v@Script"
+
+        // O método search() retorna a primeira ocorrência que casa com o padrão da expressão.
+
+        txt.search(padrao) // retorna 3
+
+        // O método match() retorna um array com todas as ocorrências que casam com o padrão.
+
+        txt.match(padrao) // retorna [a,a,a,a,a]
+    </script>
+</body>
+</html>
